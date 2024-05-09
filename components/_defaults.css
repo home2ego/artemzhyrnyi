@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  opacity: 0.735;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+em,
+i {
+  font-style: inherit;
+}
+
+svg {
+  vertical-align: bottom; /* remove default image alignment */
+}

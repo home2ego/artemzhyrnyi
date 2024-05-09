@@ -1,0 +1,5 @@
+.ax-button {
+  all: unset;
+  box-sizing: border-box;
+  outline: revert;
+}

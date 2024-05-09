@@ -1,0 +1,32 @@
+:root {
+  --bg-color: #212529;
+  --text-color: #dbe2ef;
+  --icon-color: #fff;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+:root.light-theme {
+  --bg-color: #f1f1f1;
+  --text-color: #0c1821;
+  --icon-color: #000;
+
+  -webkit-font-smoothing: auto;
+}
+
+::selection {
+  background-color: #b5b6ba;
+  color: #000;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 0.2rem solid #535bf2;
+  outline-offset: 0.135rem;
+}

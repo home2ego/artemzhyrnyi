@@ -1,0 +1,28 @@
+#toggle-theme {
+  cursor: pointer;
+  position: fixed;
+  top: 0.9rem;
+  right: 0.3rem;
+  z-index: 5;
+  padding: 0.25rem;
+
+  width: 2rem;
+  height: 2rem;
+  background-image: url('../assets/sun.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: translate 0.18s, scale 0.18s ease-in;
+}
+
+#toggle-theme:active {
+  translate: 0.1rem 0.1rem;
+}
+
+#toggle-theme:hover {
+  scale: 1.09;
+}
+
+.light-theme #toggle-theme {
+  background-image: url('../assets/moon.svg');
+}

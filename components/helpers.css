@@ -1,0 +1,29 @@
+.sr-only,
+.sr-skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sr-skip-link:focus {
+  top: 0;
+  left: 0;
+  height: auto;
+  width: auto;
+  clip: auto;
+  outline: none;
+
+  color: #0c1821;
+  background-color: #dbe2ef;
+  padding: 1.25rem;
+  border-end-end-radius: 0.75rem;
+}
+
+.light-theme .sr-skip-link:focus {
+  color: #dbe2ef;
+  background-color: #0c1821;
+}
