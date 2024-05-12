@@ -19,8 +19,8 @@
 
   color: #0c1821;
   background-color: #dbe2ef;
-  padding: 1.25rem;
-  border-end-end-radius: 0.75rem;
+  padding: 20px;
+  border-end-end-radius: 12px;
 }
 
 .light-theme .sr-skip-link:focus {

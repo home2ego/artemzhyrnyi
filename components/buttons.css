@@ -8,7 +8,7 @@
   color: var(--text-color);
   opacity: 0.735;
 
-  padding-block: 0.25rem;
+  padding-block: 4px;
 
   transition: opacity 0.18s ease-in, scale 0.18s ease-in;
 }
@@ -25,12 +25,12 @@
 .btn--action {
   background-image: url('../assets/arrow-right.svg');
   background-repeat: no-repeat;
-  background-position: center right 1.25rem;
+  background-position: center right 20px;
 
   color: #000;
   background-color: #747bff;
-  border-radius: 0.25rem;
-  padding: 0.9rem 3rem 0.9rem 1.5rem;
+  border-radius: 4px;
+  padding: 14px 48px 14px 24px;
 
   transition: scale 0.18s ease-in;
 }
