@@ -12,7 +12,7 @@
 }
 
 :root.light-theme {
-  --bg-color: #f1f1f1;
+  --bg-color: #fff;
   --text-color: #0c1821;
   --icon-color: #000;
 

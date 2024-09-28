@@ -1,6 +1,4 @@
 .layout {
-  box-sizing: border-box;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
@@ -11,7 +9,6 @@
 }
 
 .layout__header {
-  box-sizing: border-box;
   height: 100vh;
 
   display: flex;

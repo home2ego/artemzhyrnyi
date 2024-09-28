@@ -1,28 +1,26 @@
 #toggle-theme {
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  right: 5px;
-  z-index: 5;
+  display: flex;
   padding: 4px;
 
-  width: 32px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+
+  border-radius: 16px;
+  background-color: #0c1821;
+  border: 1px solid transparent;
+
+  width: 64px;
   height: 32px;
-  background-image: url('../assets/sun.svg');
-  background-repeat: no-repeat;
-  background-position: center;
 
-  transition: translate 0.18s, scale 0.18s ease-in;
-}
-
-#toggle-theme:active {
-  translate: 1.5px 1.5px;
+  transition: border-color 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 #toggle-theme:hover {
-  scale: 1.09;
+  border-color: #535bf2;
 }
 
 .light-theme #toggle-theme {
-  background-image: url('../assets/moon.svg');
+  background-color: #e0e1dd;
 }
