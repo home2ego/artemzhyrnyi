@@ -5,7 +5,7 @@ const themeIcon = document.querySelector('#theme-icon');
 function updateThemeIcon() {
   const isLightTheme = document.documentElement.classList.contains('light-theme');
 
-  themeIcon.setAttribute('src', isLightTheme ? '/assets/moon.svg' : '/assets/sun.svg');
+  themeIcon.setAttribute('src', isLightTheme ? '/moon.svg' : '/sun.svg');
   toggleTheme.setAttribute('aria-label', isLightTheme ? 'Toggle to dark mode' : 'Toggle to light mode');
 }
 
