@@ -1,6 +1,7 @@
 #toggle-theme {
   display: flex;
-  padding: 4px;
+  align-items: center;
+  padding: 0 4px;
 
   cursor: pointer;
   position: absolute;
