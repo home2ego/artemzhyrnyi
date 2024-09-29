@@ -1,4 +1,4 @@
-#toggle-theme {
+.toggle-theme {
   display: flex;
   align-items: center;
   padding: 0 4px;
@@ -18,10 +18,26 @@
   transition: border-color 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-#toggle-theme:hover {
+.toggle-theme:hover {
   border-color: #535bf2;
 }
 
-.light-theme #toggle-theme {
+.light-theme .toggle-theme {
   background-color: #e0e1dd;
+}
+
+.toggle-theme__icon {
+  background-image: url('/assets/sun.svg');
+  width: 24px;
+  height: 24px;
+
+  transform: translateX(0);
+
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.light-theme .toggle-theme__icon {
+  background-image: url('/assets/moon.svg');
+
+  transform: translateX(32px);
 }
