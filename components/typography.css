@@ -10,6 +10,11 @@
   font-weight: 400;
 }
 
+.title--base {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 .title--sm {
   font-size: clamp(0.9rem, 3.5vw, 1rem);
   font-weight: 600;
@@ -19,6 +24,6 @@
 
 /* Texts */
 .text--md {
-  font-size: clamp(1rem, 4vw, 1.2rem);
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
 }

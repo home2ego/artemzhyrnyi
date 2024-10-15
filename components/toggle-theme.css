@@ -9,7 +9,7 @@
   right: 5px;
 
   border-radius: 16px;
-  background-color: #0c1821;
+  background-color: var(--bg-color-secondary);
   border: 1px solid transparent;
 
   width: 64px;
