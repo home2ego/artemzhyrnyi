@@ -1,6 +1,6 @@
 .media {
   display: flex;
-  column-gap: 12px;
+  column-gap: 16px;
 }
 
 .media__link {

@@ -26,6 +26,10 @@
   scroll-margin-top: 32px;
 }
 
+.layout__section:not(:last-child) {
+  margin-bottom: 64px;
+}
+
 .layout__content {
   display: flex;
   flex-direction: column;

@@ -5,5 +5,5 @@
 .nav__list {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  row-gap: 16px;
 }
