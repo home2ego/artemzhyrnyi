@@ -30,12 +30,14 @@
   margin-bottom: 64px;
 }
 
+.layout__title {
+  margin-bottom: 32px;
+}
+
 .layout__content {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
-
-  margin-top: 32px;
 }
 
 @media (max-width: 48rem) {
