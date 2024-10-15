@@ -22,19 +22,23 @@
   scale: 1.05;
 }
 
-.btn--action {
-  background-image: url('../assets/arrow-right.svg');
-  background-repeat: no-repeat;
-  background-position: center right 20px;
-
+.btn--default {
   color: #000;
   background-color: #747bff;
   border-radius: 4px;
-  padding: 14px 48px 14px 24px;
+  padding: 14px 24px;
 
   transition: scale 0.18s ease-in;
 }
 
-.btn--action:hover {
+.btn--default:hover {
   scale: 1.04;
+}
+
+.btn--arrow {
+  background-image: url('../assets/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+
+  padding-right: 48px;
 }
