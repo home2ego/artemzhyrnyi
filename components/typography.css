@@ -1,35 +1,35 @@
 /* Titles */
 .title--lg {
-  font-size: clamp(2rem, 10vw, 3.2rem);
-  font-weight: 600;
-  line-height: 1.1;
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    font-weight: 600;
+    line-height: 1.1;
 }
 
 .title--md {
-  font-size: clamp(1.5rem, 7.25vw, 2.4rem);
-  font-weight: 400;
+    font-size: clamp(1.5rem, 7.25vw, 2.4rem);
+    font-weight: 400;
 }
 
 .title--base {
-  font-size: 1.2rem;
-  font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .title--sm {
-  font-size: clamp(0.9rem, 3.5vw, 1rem);
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+    font-size: clamp(0.9rem, 3.5vw, 1rem);
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .title--xs {
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 3px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 /* Texts */
 .text--md {
-  font-size: 1rem;
-  font-weight: 500;
+    font-size: 1rem;
+    font-weight: 500;
 }
