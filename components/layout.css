@@ -48,6 +48,10 @@
         grid-template-columns: 1fr;
     }
 
+    .layout__header {
+        position: initial;
+    }
+
     .layout__main {
         padding-top: 0;
     }

@@ -4,13 +4,17 @@
 
 .project {
     display: flex;
-    column-gap: 32px;
+    gap: 32px;
 
     background-color: var(--bg-color-secondary);
     padding: 32px 16px;
     border-radius: 8px;
 
     overflow: hidden;
+}
+
+.project img {
+    align-self: center;
 }
 
 .project__description {
@@ -52,4 +56,10 @@
 
 .light-theme .project img {
     box-shadow: 0 1px 3px #b5b6ba;
+}
+
+@media (max-width: 64rem) {
+    .project {
+        flex-direction: column;
+    }
 }
