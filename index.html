@@ -5,21 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Artem Zhyrnyi | Web Developer</title>
         <meta name="color-scheme" content="dark light" />
-        <script>
-            /* Check if there's a saved light theme in localStorage */
-            const savedLightTheme =
-                localStorage.getItem("isLightTheme") === "true";
-
-            /* Set theme based on saved preference or default OS preference */
-            const prefersLight = window.matchMedia(
-                "(prefers-color-scheme: light)"
-            ).matches;
-
-            if (savedLightTheme || prefersLight) {
-                /* Apply light theme before page loads */
-                document.documentElement.classList.add("light-theme");
-            }
-        </script>
         <link rel="stylesheet" href="/style.css" />
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />

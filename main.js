@@ -1,5 +1,13 @@
 const toggleTheme = document.querySelector("#toggle-theme");
 
+/* Set theme based on saved preference or default OS preference */
+const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+
+if (prefersLight) {
+    /* Apply light theme before page loads */
+    document.documentElement.classList.add("light-theme");
+}
+
 // Toggle theme and save preference on click
 toggleTheme.addEventListener("click", () => {
     document.documentElement.classList.toggle("light-theme");
@@ -12,7 +20,4 @@ toggleTheme.addEventListener("click", () => {
         "aria-label",
         isLightTheme ? "Toggle to dark mode" : "Toggle to light mode"
     );
-
-    // Save the user's preference in localStorage
-    localStorage.setItem("isLightTheme", isLightTheme);
 });
