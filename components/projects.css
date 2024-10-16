@@ -3,18 +3,18 @@
 }
 
 .project {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     gap: 32px;
 
     background-color: var(--bg-color-secondary);
     padding: 32px 16px;
     border-radius: 8px;
-
-    overflow: hidden;
 }
 
 .project img {
     align-self: center;
+    justify-self: center;
 }
 
 .project__description {
@@ -61,7 +61,7 @@
 
 @media (max-width: 70rem) {
     .project {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .project__tags {
