@@ -1,21 +1,31 @@
-const toggleTheme = document.querySelector('#toggle-theme');
+const toggleTheme = document.querySelector("#toggle-theme");
+
+// Check if there's a saved light theme in localStorage
+const savedTheme = localStorage.getItem("isLightTheme");
 
 // Set theme based on the default OS preferences
-const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
 
 if (prefersLight) {
-  document.documentElement.classList.add('light-theme'); // Apply system light-theme
+    document.documentElement.classList.add("light-theme"); // Apply system light-theme
 
-  // Update aria-label
-  toggleTheme.setAttribute('aria-label', 'Toggle to dark mode');
+    // Update aria-label
+    toggleTheme.setAttribute("aria-label", "Toggle to dark mode");
 }
 
 // Toggle theme and save preference on click
-toggleTheme.addEventListener('click', () => {
-  document.documentElement.classList.toggle('light-theme');
+toggleTheme.addEventListener("click", () => {
+    document.documentElement.classList.toggle("light-theme");
 
-  // Update aria-label
-  const isLightTheme = document.documentElement.classList.contains('light-theme');
+    const isLightTheme =
+        document.documentElement.classList.contains("light-theme");
 
-  toggleTheme.setAttribute('aria-label', isLightTheme ? 'Toggle to dark mode' : 'Toggle to light mode');
+    // Update aria-label
+    toggleTheme.setAttribute(
+        "aria-label",
+        isLightTheme ? "Toggle to dark mode" : "Toggle to light mode"
+    );
+
+    // Save the user's preference in localStorage
+    localStorage.setItem("isLightTheme", isLightTheme);
 });

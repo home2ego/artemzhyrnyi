@@ -48,5 +48,12 @@
 
 .project img {
     height: max-content;
-    box-shadow: 0 1px 3px #000;
+}
+
+.light-theme .project__tags li {
+    box-shadow: 0 1px 3px #b5b6ba;
+}
+
+.light-theme .project img {
+    box-shadow: 0 1px 3px #b5b6ba;
 }
