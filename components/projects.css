@@ -31,7 +31,8 @@
 
 .project__tags {
     display: flex;
-    column-gap: 10px;
+    justify-content: flex-end;
+    gap: 10px;
 
     padding-left: 25px;
 }
@@ -58,8 +59,12 @@
     box-shadow: 0 1px 3px #b5b6ba;
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 70rem) {
     .project {
         flex-direction: column;
+    }
+
+    .project__tags {
+        flex-wrap: wrap;
     }
 }
