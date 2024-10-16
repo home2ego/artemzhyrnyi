@@ -1,32 +1,33 @@
 :root {
-  --bg-color: #212529;
-  --bg-color-secondary: #1a1e21;
-  --text-color: #dbe2ef;
-  --icon-color: #fff;
+    --bg-color: #212529;
+    --bg-color-secondary: #1a1e21;
+    --text-color: #dbe2ef;
+    --icon-color: #fff;
 
-  font-family: system-ui, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  scroll-behavior: smooth;
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
 
-  -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 :root.light-theme {
-  --bg-color: #fff;
-  --text-color: #0c1821;
-  --icon-color: #000;
+    --bg-color: #fff;
+    --bg-color-secondary: #e0e1dd;
+    --text-color: #0c1821;
+    --icon-color: #000;
 
-  -webkit-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
 }
 
 ::selection {
-  background-color: #b5b6ba;
-  color: #000;
+    background-color: #b5b6ba;
+    color: #000;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid #535bf2;
-  outline-offset: 2px;
+    outline: 3px solid #535bf2;
+    outline-offset: 2px;
 }

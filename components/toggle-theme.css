@@ -22,10 +22,6 @@
     border-color: #535bf2;
 }
 
-.light-theme .toggle-theme {
-    background-color: #e0e1dd;
-}
-
 .toggle-theme__icon {
     background-image: url("/assets/sun.svg");
     width: 24px;
