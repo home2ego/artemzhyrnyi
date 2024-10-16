@@ -42,12 +42,8 @@
     white-space: nowrap;
 }
 
-.project a {
+.project__description a {
     width: max-content;
-}
-
-.project img {
-    height: max-content;
 }
 
 .light-theme .project__tags li {
