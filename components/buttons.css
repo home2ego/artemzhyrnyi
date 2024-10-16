@@ -1,44 +1,54 @@
 .btn {
-  display: inline-block; /* _defaults.css a {inline-block} later */
-  text-decoration: none;
-  cursor: pointer;
+    display: inline-block; /* _defaults.css a {inline-block} later */
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn--nav {
-  color: var(--text-color);
-  opacity: 0.735;
+    color: var(--text-color);
+    opacity: 0.735;
 
-  padding-block: 4px;
+    padding-block: 4px;
 
-  transition: opacity 0.18s ease-in, scale 0.18s ease-in;
+    transition-property: opacity, scale;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .btn--nav:focus,
 .btn--nav:hover {
-  opacity: initial;
+    opacity: initial;
 }
 
 .btn--nav:hover {
-  scale: 1.05;
+    scale: 1.035;
 }
 
-.btn--default {
-  color: #000;
-  background-color: #747bff;
-  border-radius: 4px;
-  padding: 14px 24px;
+.btn--pdf {
+    background-image: url("../assets/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center right 20px;
 
-  transition: scale 0.18s ease-in;
+    color: #000;
+    background-color: #747bff;
+    border-radius: 4px;
+    padding: 14px 48px 14px 24px;
+
+    transition: scale 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.btn--default:hover {
-  scale: 1.04;
+.btn--pdf:hover {
+    scale: 1.035;
 }
 
-.btn--arrow {
-  background-image: url('../assets/arrow-right.svg');
-  background-repeat: no-repeat;
-  background-position: center right 20px;
+.btn--link {
+    color: var(--icon-color);
+    padding-bottom: 5px;
+    border-bottom: 3px solid #535bf2;
 
-  padding-right: 48px;
+    transition: translate 0.18s;
+}
+
+.btn--link:hover {
+    translate: 0 4px;
 }
