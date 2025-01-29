@@ -1,3 +1,7 @@
+.projects {
+    padding-bottom: 90px;
+}
+
 .projects .project:not(:last-child) {
     margin-bottom: 32px;
 }
@@ -32,19 +36,17 @@
 .project__tags {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 10px;
 
     padding-left: 25px;
 }
 
-.project__tags li {
+.project__tags a {
     background-color: var(--bg-color);
-
     padding: 10px;
-    border-radius: 4px;
     box-shadow: 0 1px 3px #000;
-
-    white-space: nowrap;
+    border-radius: 4px;
 }
 
 .project__description a {

@@ -1,0 +1,13 @@
+.about {
+    position: relative; /* binding to scroll down button */
+    height: 100vh;
+    padding-block: 90px;
+}
+
+@media (max-width: 53rem) {
+    .about {
+        height: initial;
+        padding-top: 0;
+        padding-bottom: 180px;
+    }
+}

@@ -21,3 +21,10 @@ toggleTheme.addEventListener("click", () => {
         isLightTheme ? "Toggle to dark mode" : "Toggle to light mode"
     );
 });
+
+// Scroll down arrow
+document.querySelector("#scroll-down").addEventListener("click", () => {
+    window.scrollTo({
+        top: document.querySelector("#projects").offsetTop - 45,
+    });
+});

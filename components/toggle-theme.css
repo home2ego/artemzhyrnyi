@@ -5,6 +5,7 @@
 
     cursor: pointer;
     position: absolute;
+    z-index: 1; /* overlay on top of the about section */
     top: 15px;
     right: 15px;
 

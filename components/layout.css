@@ -20,17 +20,12 @@
     row-gap: 64px;
 }
 
-.layout__header,
-.layout__main {
+.layout__header {
     padding-block: 90px;
 }
 
 .layout__section {
-    scroll-margin-top: 32px;
-}
-
-.layout__section:not(:last-child) {
-    margin-bottom: 64px;
+    scroll-margin-top: 45px;
 }
 
 .layout__title {

@@ -3,6 +3,7 @@
     --bg-color-secondary: #1a1e21;
     --text-color: #dbe2ef;
     --icon-color: #fff;
+    --fill: var(--bg-color);
 
     font-family: system-ui, sans-serif;
     font-size: 18px;
@@ -18,6 +19,7 @@
     --bg-color-secondary: #e0e1dd;
     --text-color: #0c1821;
     --icon-color: #000;
+    --fill: var(--bg-color);
 
     -webkit-font-smoothing: auto;
 }

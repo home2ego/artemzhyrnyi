@@ -42,12 +42,25 @@
 }
 
 .btn--link {
+    position: relative;
     color: var(--icon-color);
     padding: 5px 2.5px;
-    border-bottom: 3px solid #535bf2;
-    transition: scale 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.btn--link:hover {
-    scale: 1.035;
+.btn--link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    width: 100%;
+    height: 3px;
+    background-color: #535bf2;
+
+    transition: scale 0.25s cubic-bezier(0, 0, 0.2, 1);
+    scale: 0.3;
+    transform-origin: left;
+}
+
+.btn--link:hover::after {
+    scale: 1;
 }
