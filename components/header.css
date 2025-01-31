@@ -1,0 +1,11 @@
+.header {
+    height: 100vh;
+}
+
+.header__intro {
+    position: relative;
+    top: 50%;
+    translate: 0 -50%;
+
+    margin-inline: auto;
+}

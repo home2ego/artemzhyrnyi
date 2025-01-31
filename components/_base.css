@@ -1,14 +1,20 @@
 :root {
     --bg-color: #212529;
     --bg-color-secondary: #1a1e21;
-    --text-color: #dbe2ef;
-    --icon-color: #fff;
+    --bg-color-nav: #21252980;
+    --bg-highlight: #747bff;
+
+    --primary-color: #dbe2ef;
+    --secondary-color: #fff;
     --fill: var(--bg-color);
+
+    --max-width: 63.75rem;
+    --padding-inline: clamp(16px, 4.5vw, 32px);
 
     font-family: system-ui, sans-serif;
     font-size: 18px;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--primary-color);
     scroll-behavior: smooth;
 
     -webkit-font-smoothing: antialiased;
@@ -16,9 +22,10 @@
 
 :root.light-theme {
     --bg-color: #fff;
-    --bg-color-secondary: #e0e1dd;
-    --text-color: #0c1821;
-    --icon-color: #000;
+    --bg-color-secondary: #e8e9e5;
+    --bg-color-nav: #ffffff80;
+    --primary-color: #0c1821;
+    --secondary-color: #000;
     --fill: var(--bg-color);
 
     -webkit-font-smoothing: auto;

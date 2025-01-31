@@ -1,17 +1,12 @@
 .toggle-theme {
     display: flex;
     align-items: center;
-    padding: 0 4px;
 
     cursor: pointer;
-    position: absolute;
-    z-index: 1; /* overlay on top of the about section */
-    top: 15px;
-    right: 15px;
 
     border-radius: 16px;
     background-color: var(--bg-color-secondary);
-    border: 1px solid transparent;
+    border: 1.5px solid transparent;
 
     width: 64px;
     height: 32px;
@@ -28,13 +23,13 @@
     width: 24px;
     height: 24px;
 
-    transform: translateX(0);
+    translate: 8px;
 
-    transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1);
+    transition: translate 0.28s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .light-theme .toggle-theme__icon {
     background-image: url("/assets/moon.svg");
 
-    transform: translateX(32px);
+    translate: 32px;
 }

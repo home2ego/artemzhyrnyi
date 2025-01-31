@@ -1,8 +1,22 @@
-.intro__sub-title {
-    margin-top: 8px;
+.intro {
+    max-width: 26rem;
 }
 
-.intro__text {
-    margin-top: 24px;
-    max-width: 30rem;
+.intro__top {
+    margin-bottom: 32px;
+}
+
+.intro__bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.intro__title {
+    margin-bottom: 8px;
+}
+
+.intro__sub-title {
+    margin-bottom: 24px;
 }

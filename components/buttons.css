@@ -1,18 +1,11 @@
-.btn {
-    display: inline-block; /* _defaults.css a {inline-block} later */
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .btn--nav {
-    color: var(--text-color);
-    opacity: 0.735;
-
+    position: relative;
     padding-block: 4px;
 
-    transition-property: opacity, scale;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    color: var(--primary-color);
+    opacity: 0.735;
+
+    transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .btn--nav:focus,
@@ -20,33 +13,14 @@
     opacity: initial;
 }
 
-.btn--nav:hover {
-    scale: 1.035;
-}
-
-.btn--pdf {
-    background-image: url("../assets/arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: center right 20px;
-
-    color: #000;
-    background-color: #747bff;
-    border-radius: 4px;
-    padding: 14px 48px 14px 24px;
-
-    transition: scale 0.3s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.btn--pdf:hover {
-    scale: 1.035;
-}
-
 .btn--link {
     position: relative;
-    color: var(--icon-color);
-    padding: 5px 2.5px;
+    padding-block: 4px;
+
+    color: var(--secondary-color);
 }
 
+.btn--nav::after,
 .btn--link::after {
     content: "";
     display: block;
@@ -56,11 +30,50 @@
     height: 3px;
     background-color: #535bf2;
 
-    transition: scale 0.25s cubic-bezier(0, 0, 0.2, 1);
-    scale: 0.3;
-    transform-origin: left;
+    transition-property: scale;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.btn--nav::after {
+    scale: 0;
+    transition-duration: 0.3s;
+}
+.btn--link::after {
+    transform-origin: left;
+    scale: 0.35;
+    transition-duration: 0.18s;
+}
+
+.btn--nav:hover::after,
 .btn--link:hover::after {
     scale: 1;
+}
+
+.btn--link:focus::after {
+    scale: 0;
+}
+
+.btn--pdf {
+    position: relative;
+
+    color: inherit;
+    box-shadow: 0 1px 3px #000;
+
+    border-radius: 4px;
+    padding: 10px 50px 10px 25px;
+
+    opacity: 0.65;
+    transition: opacity 0.18s;
+}
+
+.btn--pdf:hover,
+.btn--pdf:focus {
+    opacity: initial;
+}
+
+.btn--pdf svg {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    right: 20px;
 }
