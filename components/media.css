@@ -1,21 +1,21 @@
 .media {
-    display: flex;
-    column-gap: 16px;
+  display: flex;
+  column-gap: 16px;
 }
 
 .media__link {
-    display: inline-block;
+  display: inline-block;
 
-    padding: 10px;
-    border-radius: 4px;
+  padding: 10px;
+  border-radius: 4px;
 
-    box-shadow: 0 1px 3px #000;
+  box-shadow: 0 1px 3px #000;
 
-    opacity: 0.65;
-    transition: opacity 0.18s;
+  opacity: 0.65;
+  transition: opacity 0.18s;
 }
 
 .media__link:hover,
 .media__link:focus {
-    opacity: initial;
+  opacity: initial;
 }

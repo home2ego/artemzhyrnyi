@@ -1,79 +1,79 @@
 .btn--nav {
-    position: relative;
-    padding-block: 4px;
+  position: relative;
+  padding-block: 4px;
 
-    color: var(--primary-color);
-    opacity: 0.735;
+  color: var(--primary-color);
+  opacity: 0.735;
 
-    transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .btn--nav:focus,
 .btn--nav:hover {
-    opacity: initial;
+  opacity: initial;
 }
 
 .btn--link {
-    position: relative;
-    padding-block: 4px;
+  position: relative;
+  padding-block: 4px;
 
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .btn--nav::after,
 .btn--link::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -7px;
-    width: 100%;
-    height: 3px;
-    background-color: #535bf2;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--highlight-color);
 
-    transition-property: scale;
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-property: scale;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .btn--nav::after {
-    scale: 0;
-    transition-duration: 0.3s;
+  scale: 0;
+  transition-duration: 0.3s;
 }
 .btn--link::after {
-    transform-origin: left;
-    scale: 0.35;
-    transition-duration: 0.18s;
+  transform-origin: left;
+  scale: 0.35;
+  transition-duration: 0.18s;
 }
 
 .btn--nav:hover::after,
 .btn--link:hover::after {
-    scale: 1;
+  scale: 1;
 }
 
 .btn--link:focus::after {
-    scale: 0;
+  scale: 0;
 }
 
 .btn--pdf {
-    position: relative;
+  position: relative;
 
-    color: inherit;
-    box-shadow: 0 1px 3px #000;
+  color: inherit;
+  box-shadow: 0 1px 3px #000;
 
-    border-radius: 4px;
-    padding: 10px 50px 10px 25px;
+  border-radius: 4px;
+  padding: 10px 50px 10px 25px;
 
-    opacity: 0.65;
-    transition: opacity 0.18s;
+  opacity: 0.65;
+  transition: opacity 0.18s;
 }
 
 .btn--pdf:hover,
 .btn--pdf:focus {
-    opacity: initial;
+  opacity: initial;
 }
 
 .btn--pdf svg {
-    position: absolute;
-    top: 50%;
-    translate: 0 -50%;
-    right: 20px;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  right: 20px;
 }

@@ -1,34 +1,42 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body,
+body {
+  margin: 0;
+  min-width: 320px; /* does not break layouts smaller than 320px */
+}
+
 h1,
 h2,
 h3 {
-    margin: 0;
+  margin: 0;
 }
 
 p {
-    margin: 0;
-    opacity: 0.735;
+  margin: 0;
+  opacity: 0.735;
 }
 
 ul {
-    margin: 0;
-    list-style: none;
-    padding-left: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 svg,
 img {
-    vertical-align: bottom; /* remove default image & svg alignment */
+  vertical-align: bottom; /* remove default image & svg alignment */
 }
 
 strong {
-    text-decoration: underline;
+  font-weight: 900;
+}
+
+em {
+  text-decoration: underline;
 }

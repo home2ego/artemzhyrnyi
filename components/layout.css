@@ -1,30 +1,23 @@
 .layout {
-    max-width: var(--max-width);
-    padding-inline: var(--padding-inline);
-    margin-inline: auto;
-}
-
-.layout__header {
-    margin-bottom: 90px;
-}
-
-.layout__nav {
-    position: fixed;
-    left: 50%;
-    translate: -50%;
-    z-index: 1;
+  max-width: var(--max-width);
+  padding-inline: var(--padding-inline);
+  margin-inline: auto;
 }
 
 .layout__section {
-    scroll-margin-top: 95px;
+  scroll-margin-top: 95px;
+}
+
+.layout__section:not(:last-child) {
+  margin-bottom: 95px;
 }
 
 .layout__title {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .layout__content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
 }

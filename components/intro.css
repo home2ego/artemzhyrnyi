@@ -1,22 +1,31 @@
 .intro {
-    max-width: 26rem;
+  height: 100vh;
+}
+
+.intro__content {
+  position: relative;
+  top: 50%;
+  translate: 0 -50%;
+
+  max-width: 34rem;
+  margin-inline: auto;
 }
 
 .intro__top {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .intro__bottom {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    column-gap: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 16px;
 }
 
 .intro__title {
-    margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
-.intro__sub-title {
-    margin-bottom: 24px;
+.intro__text {
+  margin-bottom: 8px;
 }

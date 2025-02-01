@@ -1,43 +1,42 @@
 :root {
-    --bg-color: #212529;
-    --bg-color-secondary: #1a1e21;
-    --bg-color-nav: #21252980;
-    --bg-highlight: #747bff;
+  --bg-color: #212529;
+  --bg-color-secondary: #1a1e21;
+  --bg-color-nav: #21252980;
+  --primary-color: #dbe2ef;
+  --secondary-color: #fff;
+  --fill: var(--bg-color);
+  --highlight-color: #535bf2;
 
-    --primary-color: #dbe2ef;
-    --secondary-color: #fff;
-    --fill: var(--bg-color);
+  --max-width: 63.75rem;
+  --padding-inline: clamp(16px, 5vw, 32px);
 
-    --max-width: 63.75rem;
-    --padding-inline: clamp(16px, 4.5vw, 32px);
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  scroll-behavior: smooth;
 
-    font-family: system-ui, sans-serif;
-    font-size: 18px;
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    scroll-behavior: smooth;
-
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 :root.light-theme {
-    --bg-color: #fff;
-    --bg-color-secondary: #e8e9e5;
-    --bg-color-nav: #ffffff80;
-    --primary-color: #0c1821;
-    --secondary-color: #000;
-    --fill: var(--bg-color);
+  --bg-color: #fff;
+  --bg-color-secondary: #e8e9e5;
+  --bg-color-nav: #ffffff80;
+  --primary-color: #0c1821;
+  --secondary-color: #000;
+  --fill: var(--bg-color);
 
-    -webkit-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
 }
 
 ::selection {
-    background-color: #b5b6ba;
-    color: #000;
+  background-color: #b5b6ba;
+  color: #000;
 }
 
 a:focus-visible,
 button:focus-visible {
-    outline: 3px solid #535bf2;
-    outline-offset: 2px;
+  outline: 3px solid var(--highlight-color);
+  outline-offset: 2px;
 }

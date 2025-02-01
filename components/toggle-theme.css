@@ -1,35 +1,35 @@
 .toggle-theme {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    border-radius: 16px;
-    background-color: var(--bg-color-secondary);
-    border: 1.5px solid transparent;
+  border-radius: 16px;
+  background-color: var(--bg-color-secondary);
+  border: 1.5px solid transparent;
 
-    width: 64px;
-    height: 32px;
+  width: 64px;
+  height: 32px;
 
-    transition: border-color 0.18s;
+  transition: border-color 0.18s;
 }
 
 .toggle-theme:hover {
-    border-color: #535bf2;
+  border-color: var(--highlight-color);
 }
 
 .toggle-theme__icon {
-    background-image: url("/assets/sun.svg");
-    width: 24px;
-    height: 24px;
+  background-image: url("/assets/sun.svg");
+  width: 24px;
+  height: 24px;
 
-    translate: 8px;
+  translate: 8px;
 
-    transition: translate 0.28s cubic-bezier(0, 0, 0.2, 1);
+  transition: translate 0.28s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .light-theme .toggle-theme__icon {
-    background-image: url("/assets/moon.svg");
+  background-image: url("/assets/moon.svg");
 
-    translate: 32px;
+  translate: 32px;
 }

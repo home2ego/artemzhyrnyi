@@ -1,393 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Artem Zhyrnyi | Web Developer</title>
-        <meta name="color-scheme" content="dark light" />
-        <link rel="stylesheet" href="/style.css" />
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.webmanifest" />
-        <meta
-            name="description"
-            content="Artem Zhyrnyi is a front-end engineer who develops inclusive products for the web with a focus on accessibility, proper semantics, and performance."
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Artem Zhyrnyi" />
-        <meta
-            name="twitter:description"
-            content="I'm a passionate front-end engineer who develops inclusive products for the web with a focus on accessibility, proper semantics, and performance."
-        />
-        <meta
-            name="twitter:image"
-            content="https://res.cloudinary.com/deoo8jl7p/image/upload/f_auto,fl_progressive,q_auto:good/v1729278666/artem-zhyrnyi-website_umb3ni.png"
-        />
-        <meta name="theme-color" content="#212529" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artem Zhyrnyi | Front-end Engineer</title>
+    <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta
+      name="description"
+      content="Artem Zhyrnyi is a front-end engineer with a passion for building accessible, high-performance websites and apps. Skilled in React, TypeScript, and JavaScript."
+    />
+    <meta name="theme-color" content="#212529" />
+  </head>
 
-    <body class="layout">
-        <a href="#about" class="title--sm sr-skip-link">Skip to content</a>
+  <body class="layout">
+    <a href="#about" class="title--sm sr-skip-link">Skip to content</a>
 
-        <header class="header layout__header">
-            <nav class="nav layout__nav">
-                <a class="nav__logo" href="#">
-                    <img
-                        src="/icon.svg"
-                        alt="Artem Zhyrnyi logo"
-                        width="32"
-                        height="32"
-                    />
-                </a>
+    <header class="header">
+      <nav class="nav header__nav">
+        <a class="nav__logo" href="#">
+          <img
+            src="/icon.svg"
+            alt="Artem Zhyrnyi logo"
+            width="32"
+            height="32"
+          />
+        </a>
 
-                <ul class="nav__list">
-                    <li>
-                        <a href="#about" class="title--sm btn btn--nav">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="title--sm btn btn--nav">
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="title--sm btn btn--nav">
-                            Skills
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="title--sm btn btn--nav">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+        <ul class="nav__list">
+          <li>
+            <a href="#about" class="title--sm btn btn--nav">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="title--sm btn btn--nav">Projects</a>
+          </li>
+          <li>
+            <a href="#skills" class="title--sm btn btn--nav">Skills</a>
+          </li>
+          <li>
+            <a href="#contact" class="title--sm btn btn--nav">Contact</a>
+          </li>
+        </ul>
 
-                <button
-                    id="toggle-theme"
-                    class="toggle-theme ax-button"
-                    aria-label="Toggle theme"
-                >
-                    <span class="toggle-theme__icon"></span>
-                </button>
-            </nav>
+        <button
+          id="toggle-theme"
+          class="toggle-theme ax-button"
+          aria-label="Toggle theme"
+        >
+          <span class="toggle-theme__icon"></span>
+        </button>
+      </nav>
+    </header>
 
-            <div class="intro header__intro">
-                <div class="intro__top">
-                    <h1 class="title--lg intro__title">Artem Zhyrnyi</h1>
-                    <h2 class="title--md intro__sub-title">Web Developer</h2>
-                    <p class="text--md">
-                        I develop inclusive products for the web with a focus on
-                        <strong>accessibility</strong>
-                        &
-                        <strong>performance</strong>.
-                    </p>
-                </div>
+    <main>
+      <section class="intro layout__section">
+        <div class="intro__content">
+          <div class="intro__top">
+            <h1 class="title--lg intro__title">Artem Zhyrnyi</h1>
+            <p class="text--md intro__text">
+              <strong>Front-end engineer</strong> with 2 years of experience.
+            </p>
+            <p class="text--md">
+              Passionate about building high-performance, accessible websites
+              and apps. Focused on
+              <em>React</em>, <em>TypeScript</em>, and <em>JavaScript</em>.
+            </p>
+          </div>
 
-                <div class="intro__bottom">
-                    <a
-                        href="/cv.pdf"
-                        target="_blank"
-                        class="title--sm btn btn--pdf"
-                        aria-label="Open my CV in a new window"
-                    >
-                        CV
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            aria-hidden="true"
-                        >
-                            <path
-                                stroke="var(--primary-color)"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M19 12H5m14 0-4 4m4-4-4-4"
-                            />
-                        </svg>
-                    </a>
-
-                    <ul class="media" aria-label="My social media links">
-                        <li class="media__item">
-                            <a
-                                class="media__link"
-                                href="https://github.com/home2ego"
-                                target="_blank"
-                            >
-                                <span class="sr-only">GitHub</span>
-
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    fill="var(--secondary-color)"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.47 10.47 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
-                                        clip-rule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                class="media__link"
-                                href="https://www.linkedin.com/in/home2ego/"
-                                target="_blank"
-                            >
-                                <span class="sr-only">LinkedIn</span>
-
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    fill="var(--secondary-color)"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2M8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75M19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.7.7 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <button
-                id="scroll-down"
-                class="ax-button"
-                aria-label="Scroll down to the section about"
+          <div class="intro__bottom">
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              class="title--sm btn btn--pdf"
+              aria-label="Open my CV in a new window"
             >
-                <svg
+              CV
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke="var(--primary-color)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 12H5m14 0-4 4m4-4-4-4"
+                />
+              </svg>
+            </a>
+            <ul class="media" aria-label="My social media links">
+              <li class="media__item">
+                <a
+                  class="media__link"
+                  href="https://github.com/home2ego"
+                  target="_blank"
+                >
+                  <span class="sr-only">GitHub</span>
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    height="48px"
-                    viewBox="0 0 24 24"
-                    width="48px"
-                >
-                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    width="24"
+                    height="24"
+                    fill="var(--secondary-color)"
+                    aria-hidden="true"
+                  >
                     <path
-                        d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-                        stroke="var(--secondary-color)"
+                      fill-rule="evenodd"
+                      d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.47 10.47 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
+                      clip-rule="evenodd"
                     />
-                </svg>
-            </button>
-        </header>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="media__link"
+                  href="https://www.linkedin.com/in/home2ego/"
+                  target="_blank"
+                >
+                  <span class="sr-only">LinkedIn</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="var(--secondary-color)"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2M8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75M19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.7.7 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        <main id="content" class="layout__main">
-            <section
-                id="about"
-                class="about layout__section"
-                aria-labelledby="about-me"
-            >
-                <h2 id="about-me" class="title--sm layout__title">About Me</h2>
+        <button
+          id="scroll-down"
+          class="ax-button"
+          aria-label="Scroll down to the section about"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            height="48px"
+            width="48px"
+            aria-hidden="true"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              stroke="var(--secondary-color)"
+            />
+          </svg>
+        </button>
+      </section>
 
-                <div class="layout__content">
-                    <p class="text--md">
-                        I studied <strong>Computer Science</strong> at the
-                        <em>Kyiv Polytechnic Institute</em>.
-                    </p>
+      <section
+        id="about"
+        class="about layout__section"
+        aria-labelledby="about-me"
+      >
+        <h2 id="about-me" class="title--sm layout__title">About Me</h2>
 
-                    <p class="text--md">
-                        Additionally, I have completed front-end development
-                        training at
-                        <em>Mate academy</em>, where I gained practical
-                        expertise through mentorship. This experience equipped
-                        me with comprehensive knowledge of web development best
-                        practices, emphasizing proper semantics, accessibility,
-                        and web performance.
-                    </p>
+        <div class="layout__content">
+          <p class="text--md">
+            I studied <strong>Computer Science</strong> at the
+            <em>Kyiv Polytechnic Institute</em>.
+          </p>
 
-                    <p class="text--md">
-                        When I'm not at the computer, I typically go hiking,
-                        rock climbing, or ride a bike to travel around.
-                    </p>
+          <p class="text--md">
+            Additionally, I have completed front-end development training at
+            <em>Mate academy</em>, where I gained practical expertise through
+            mentorship. This experience equipped me with comprehensive knowledge
+            of web development best practices, emphasizing proper semantics,
+            accessibility, and web performance.
+          </p>
+
+          <p class="text--md">
+            When I'm not at the computer, I typically go hiking, rock climbing,
+            or ride a bike to travel around.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="layout__section"
+        aria-labelledby="my-projects"
+      >
+        <h2 id="my-projects" class="title--sm layout__title">Projects</h2>
+
+        <div class="projects">
+          <article class="project">
+            <img
+              src="./assets/my-shop.webp"
+              width="300"
+              height="188"
+              alt="MyShop website"
+              loading="lazy"
+            />
+            <div class="project__description">
+              <div class="project__title">
+                <h3 class="title--md">MyShop</h3>
+                <div class="project__tags">
+                  <p class="title--xs">Details:</p>
+                  <a
+                    class="media__link"
+                    href="https://github.com/home2ego/my-shop"
+                    target="_blank"
+                  >
+                    <span class="sr-only">GitHub</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="var(--secondary-color)"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.47 10.47 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
                 </div>
-            </section>
+              </div>
+              <p class="project__text text--md">
+                MyShop - is a grocery application that offers users product
+                browsing, and shopping cart management, all within a highly
+                responsive and interactive user interface.
+              </p>
+              <a
+                href="https://my-shop-web.pages.dev/"
+                target="_blank"
+                class="text--md btn btn--link"
+              >
+                View MyShop
+              </a>
+            </div>
+          </article>
 
-            <section
-                id="projects"
-                class="layout__section"
-                aria-labelledby="my-projects"
-            >
-                <h2 id="my-projects" class="title--sm layout__title">
-                    Projects
-                </h2>
-
-                <div class="projects">
-                    <article class="project">
-                        <img
-                            src="./assets/my-shop.webp"
-                            width="300"
-                            height="188"
-                            alt="MyShop website"
-                            loading="lazy"
-                        />
-                        <div class="project__description">
-                            <div class="project__title">
-                                <h3 class="title--base">MyShop</h3>
-                                <div class="project__tags">
-                                    <p class="title--xs">Details:</p>
-                                    <a
-                                        class="media__link"
-                                        href="https://github.com/home2ego/my-shop"
-                                        target="_blank"
-                                    >
-                                        <span class="sr-only">GitHub</span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            fill="var(--secondary-color)"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.47 10.47 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="project__text text--md">
-                                MyShop - is a grocery application that offers
-                                users product browsing, and shopping cart
-                                management, all within a highly responsive and
-                                interactive user interface.
-                            </p>
-                            <a
-                                href="https://my-shop-web.pages.dev/"
-                                target="_blank"
-                                class="text--md btn btn--link"
-                            >
-                                View MyShop
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <img
-                            src="./assets/todos-app.webp"
-                            width="300"
-                            height="188"
-                            alt="Todos app"
-                            loading="lazy"
-                        />
-                        <div class="project__description">
-                            <div class="project__title">
-                                <h3 class="title--base">Todos</h3>
-                                <div class="project__tags">
-                                    <p class="title--xs">Details:</p>
-                                    <a
-                                        class="media__link"
-                                        href="https://github.com/home2ego/todos-app"
-                                        target="_blank"
-                                    >
-                                        <span class="sr-only">GitHub</span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            fill="var(--secondary-color)"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.47 10.47 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="project__text text--md">
-                                Todos - is a single-page application that allows
-                                users to add and manage todos on both the client
-                                and server.
-                            </p>
-                            <a
-                                href="https://todos-web.pages.dev/"
-                                target="_blank"
-                                class="text--md btn btn--link"
-                            >
-                                View Todos
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <img
-                            src="./assets/my-bike.webp"
-                            width="300"
-                            height="188"
-                            alt="MyBike website"
-                            loading="lazy"
-                        />
-                        <div class="project__description">
-                            <div class="project__title">
-                                <h3 class="title--base">MyBike</h3>
-                                <div class="project__tags">
-                                    <p class="title--xs">Details:</p>
-                                    <a
-                                        class="media__link"
-                                        href="https://github.com/home2ego/my-bike"
-                                        target="_blank"
-                                    >
-                                        <span class="sr-only">GitHub</span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            fill="var(--secondary-color)"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.47 10.47 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="project__text text--md">
-                                MyBike - is a responsive landing page designed
-                                to promote and showcase bicycles. It provides
-                                information about different bike models,
-                                features, and pricing.
-                            </p>
-                            <a
-                                href="https://my-bike-web.pages.dev/"
-                                target="_blank"
-                                class="text--md btn btn--link"
-                            >
-                                View MyBike
-                            </a>
-                        </div>
-                    </article>
+          <article class="project">
+            <img
+              src="./assets/todos-app.webp"
+              width="300"
+              height="188"
+              alt="Todos app"
+              loading="lazy"
+            />
+            <div class="project__description">
+              <div class="project__title">
+                <h3 class="title--md">Todos</h3>
+                <div class="project__tags">
+                  <p class="title--xs">Details:</p>
+                  <a
+                    class="media__link"
+                    href="https://github.com/home2ego/todos-app"
+                    target="_blank"
+                  >
+                    <span class="sr-only">GitHub</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="var(--secondary-color)"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.47 10.47 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
                 </div>
-            </section>
-        </main>
+              </div>
+              <p class="project__text text--md">
+                Todos - is a single-page application that allows users to add
+                and manage todos on both the client and server.
+              </p>
+              <a
+                href="https://todos-web.pages.dev/"
+                target="_blank"
+                class="text--md btn btn--link"
+              >
+                View Todos
+              </a>
+            </div>
+          </article>
 
-        <script type="module" defer src="/main.js"></script>
-        <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "Person",
-              "email": "ic3ego@gmail.com",
-              "jobTitle": "Self-employed",
-              "name": "Artem Zhyrnyi",
-              "gender": "male",
-              "url": "https://artemzhyrnyi.netlify.app/",
-              "description": "I'm Artem Zhyrnyi. I develop inclusive products for the web with a focus on
-              accessibility, proper semantics, and performance."
-            }
-        </script>
-    </body>
+          <article class="project">
+            <img
+              src="./assets/my-bike.webp"
+              width="300"
+              height="188"
+              alt="MyBike website"
+              loading="lazy"
+            />
+            <div class="project__description">
+              <div class="project__title">
+                <h3 class="title--md">MyBike</h3>
+                <div class="project__tags">
+                  <p class="title--xs">Details:</p>
+                  <a
+                    class="media__link"
+                    href="https://github.com/home2ego/my-bike"
+                    target="_blank"
+                  >
+                    <span class="sr-only">GitHub</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="var(--secondary-color)"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.006 2a9.85 9.85 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.05 10.05 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.7 2.7 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.08 2.08 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.02 4.02 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.02 4.02 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.47 2.47 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.47 10.47 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.85 9.85 0 0 0 12.007 2Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project__text text--md">
+                MyBike - is a responsive landing page designed to promote and
+                showcase bicycles. It provides information about different bike
+                models, features, and pricing.
+              </p>
+              <a
+                href="https://my-bike-web.pages.dev/"
+                target="_blank"
+                class="text--md btn btn--link"
+              >
+                View MyBike
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" defer src="/main.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "email": "ic3ego@gmail.com",
+        "jobTitle": "Self-employed",
+        "name": "Artem Zhyrnyi",
+        "gender": "male",
+        "url": "https://artemzhyrnyi.netlify.app/",
+        "description": "I'm Artem Zhyrnyi. I develop inclusive products for the web with a focus on
+        accessibility, proper semantics, and performance."
+      }
+    </script>
+  </body>
 </html>
