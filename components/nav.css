@@ -1,27 +1,11 @@
 .nav {
   display: flex;
   justify-content: space-between;
-
-  width: min(100%, var(--max-width));
-  padding: 32px var(--padding-inline);
-
-  background-color: var(--bg-color-nav);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); /* Safari support 9-17.6 */
-}
-
-.nav__logo {
-  transition: scale 0.28s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.nav__logo:hover {
-  scale: 1.06;
+  column-gap: 32px;
 }
 
 .nav__list {
   display: flex;
   align-items: center;
   column-gap: 16px;
-
-  margin-inline: 16px;
 }

@@ -4,6 +4,13 @@
   margin-inline: auto;
 }
 
+.layout__header {
+  position: fixed;
+  left: 50%;
+  translate: -50%;
+  z-index: 1;
+}
+
 .layout__section {
   scroll-margin-top: 95px;
 }

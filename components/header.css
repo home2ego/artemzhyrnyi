@@ -1,6 +1,13 @@
-.header__nav {
-  position: fixed;
-  left: 50%;
-  translate: -50%;
-  z-index: 1;
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 32px;
+
+  width: min(100%, var(--max-width));
+  padding: 32px var(--padding-inline);
+
+  background-color: var(--bg-color-nav);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* Safari support 9-17.6 */
 }
