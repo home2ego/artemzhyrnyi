@@ -4,12 +4,12 @@
 
   cursor: pointer;
 
-  border-radius: 16px;
-  background-color: var(--bg-color-secondary);
-  border: 1.5px solid transparent;
-
   width: 64px;
   height: 32px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+
+  background-color: var(--bg-color-secondary);
 
   transition: border-color 0.18s;
 }

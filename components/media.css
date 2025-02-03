@@ -17,5 +17,5 @@
 
 .media__link:hover,
 .media__link:focus {
-  opacity: initial;
+  opacity: 1;
 }

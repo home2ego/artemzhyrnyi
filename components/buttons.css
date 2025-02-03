@@ -1,6 +1,6 @@
 .btn--nav {
   position: relative;
-  padding-block: 4px;
+  padding-block: 3.5px;
 
   color: var(--primary-color);
   opacity: 0.735;
@@ -10,12 +10,12 @@
 
 .btn--nav:focus,
 .btn--nav:hover {
-  opacity: initial;
+  opacity: 1;
 }
 
 .btn--link {
   position: relative;
-  padding-block: 4px;
+  padding-block: 3.5px;
 
   color: var(--secondary-color);
 }
