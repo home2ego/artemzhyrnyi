@@ -1,4 +1,5 @@
 const toggleTheme = document.querySelector("#toggle-theme");
+const toggleMenu = document.querySelector("#toggle-menu");
 
 // Set theme based on saved browser settings or OS default settings
 const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
@@ -19,3 +20,8 @@ document.querySelector("#scroll-down").addEventListener("click", () => {
     top: document.querySelector("#about").offsetTop - 95,
   });
 });
+
+// Toggle menu
+toggleMenu.addEventListener("click", () =>
+  toggleMenu.classList.toggle("is-open")
+);

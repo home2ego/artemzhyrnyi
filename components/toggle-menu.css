@@ -1,0 +1,59 @@
+.toggle-menu {
+  display: inline-flex;
+  align-items: center;
+
+  width: fit-content;
+
+  opacity: 0.735;
+  transition: opacity 0.18s;
+}
+
+.toggle-menu:hover {
+  opacity: 1;
+}
+
+.toggle-menu__icon {
+  display: inline-block;
+
+  position: relative;
+}
+
+.toggle-menu__icon,
+.toggle-menu__icon::before,
+.toggle-menu__icon::after {
+  width: 32px;
+  height: 4px;
+  border-radius: 4px;
+
+  background-color: var(--secondary-color);
+
+  transition: opacity 0.18s, transform 0.28s;
+}
+
+.toggle-menu__icon::before,
+.toggle-menu__icon::after {
+  content: "";
+
+  position: absolute;
+}
+
+.toggle-menu__icon::before {
+  top: -10px;
+}
+
+.toggle-menu__icon::after {
+  top: 10px;
+}
+
+.toggle-menu.is-open .toggle-menu__icon {
+  transform: rotate(45deg);
+}
+
+.toggle-menu.is-open .toggle-menu__icon::before {
+  transform: rotate(-45deg) translate3d(-5.71429px, 6px, 0);
+  opacity: 0;
+}
+
+.toggle-menu.is-open .toggle-menu__icon::after {
+  transform: translate3d(0, -10px, 0) rotate(-90deg);
+}

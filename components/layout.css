@@ -1,5 +1,5 @@
 .layout {
-  max-width: var(--max-width);
+  max-width: var(--desktop-min-width);
   padding-inline: var(--padding-inline);
   margin-inline: auto;
 }

@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 2fr;
   column-gap: 32px;
 
-  width: min(100%, var(--max-width));
+  width: min(100%, var(--desktop-min-width));
   padding: 32px var(--padding-inline);
 
   background-color: var(--bg-color-nav);

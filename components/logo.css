@@ -1,9 +1,9 @@
 .logo {
   width: fit-content;
 
-  transition: scale 0.28s cubic-bezier(0, 0, 0.2, 1);
+  transition: scale 0.28s;
 }
 
 .logo:hover {
-  scale: 1.06;
+  scale: 1.075;
 }
