@@ -17,7 +17,7 @@ toggleTheme.addEventListener("click", () =>
 // Scroll down arrow
 document.querySelector("#scroll-down").addEventListener("click", () => {
   window.scrollTo({
-    top: document.querySelector("#about").offsetTop - 95,
+    top: document.querySelector("#about").offsetTop - 100,
   });
 });
 

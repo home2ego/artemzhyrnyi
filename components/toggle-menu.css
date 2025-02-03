@@ -1,14 +1,15 @@
 .toggle-menu {
   display: inline-flex;
-  align-items: center;
 
   width: fit-content;
+  padding: 16px 8px;
 
   opacity: 0.735;
   transition: opacity 0.18s;
 }
 
-.toggle-menu:hover {
+.toggle-menu:hover,
+.toggle-menu:focus {
   opacity: 1;
 }
 
@@ -56,4 +57,10 @@
 
 .toggle-menu.is-open .toggle-menu__icon::after {
   transform: translate3d(0, -10px, 0) rotate(-90deg);
+}
+
+@media screen and (min-width: 46.5rem) {
+  .toggle-menu {
+    display: none;
+  }
 }

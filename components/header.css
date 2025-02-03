@@ -2,12 +2,17 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 2fr;
+  align-items: center;
   column-gap: 32px;
 
-  width: min(100%, var(--desktop-min-width));
+  width: min(100%, 63.75rem);
   padding: 32px var(--padding-inline);
 
   background-color: var(--bg-color-nav);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); /* Safari support 9-17.6 */
+}
+
+.header__toggle-menu {
+  justify-self: end;
 }

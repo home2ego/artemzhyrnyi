@@ -7,8 +7,6 @@
   --fill: var(--bg-color);
   --highlight-color: #535bf2;
 
-  --desktop-min-width: 63.75rem;
-  --tablet-min-width: 42.5rem;
   --padding-inline: clamp(16px, 5vw, 32px);
 
   font-family: system-ui, sans-serif;

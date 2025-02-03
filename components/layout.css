@@ -1,5 +1,5 @@
 .layout {
-  max-width: var(--desktop-min-width);
+  max-width: 63.75rem;
   padding-inline: var(--padding-inline);
   margin-inline: auto;
 }
@@ -12,7 +12,7 @@
 }
 
 .layout__section {
-  scroll-margin-top: 95px;
+  scroll-margin-top: 100px;
 }
 
 .layout__section:not(:last-child) {
