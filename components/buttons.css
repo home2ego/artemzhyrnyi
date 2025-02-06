@@ -3,7 +3,7 @@
   padding-block: 3.5px;
 
   color: var(--primary-color);
-  opacity: 0.8;
+  opacity: 0.735;
 
   transition: opacity 0.18s;
 }
@@ -67,7 +67,7 @@
 
 .btn--pdf:hover,
 .btn--pdf:focus {
-  opacity: initial;
+  opacity: 1;
 }
 
 .btn--pdf svg {

@@ -14,11 +14,6 @@ p {
   margin: 0;
 }
 
-p,
-li {
-  opacity: 0.735;
-}
-
 ul {
   margin: 0;
   list-style: none;

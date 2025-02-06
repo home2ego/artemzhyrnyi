@@ -28,10 +28,12 @@
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.25;
+  opacity: 0.735;
 }
 
 .text--xs {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25;
+  opacity: 0.735;
 }
