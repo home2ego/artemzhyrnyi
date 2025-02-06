@@ -3,8 +3,6 @@
 }
 
 .toggle-menu[aria-expanded="true"] + .menu {
-  display: initial;
-
   padding: 16px;
   border-radius: 8px;
 
@@ -18,5 +16,9 @@
 
   .menu__toggle-theme {
     margin-top: 24px;
+  }
+
+  .toggle-menu[aria-expanded="true"] + .menu {
+    display: initial;
   }
 }

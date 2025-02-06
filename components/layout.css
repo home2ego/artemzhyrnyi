@@ -28,7 +28,7 @@
   flex-direction: column;
   row-gap: 16px;
 
-  padding-left: 32px;
+  padding-left: var(--padding-inline);
 }
 
 .layout:has(.toggle-menu[aria-expanded="true"]) {
