@@ -1,8 +1,7 @@
 .toggle-menu {
-  display: inline-flex;
+  display: none;
 
-  width: fit-content;
-  padding: 18px 8px;
+  padding: 14px 2px;
 
   opacity: 0.735;
   transition: opacity 0.18s;
@@ -14,8 +13,6 @@
 }
 
 .toggle-menu__icon {
-  display: inline-block;
-
   position: relative;
 }
 
@@ -46,21 +43,21 @@
   top: 10px;
 }
 
-.toggle-menu.is-open .toggle-menu__icon {
+.toggle-menu[aria-expanded="true"] .toggle-menu__icon {
   transform: rotate(45deg);
 }
 
-.toggle-menu.is-open .toggle-menu__icon::before {
+.toggle-menu[aria-expanded="true"] .toggle-menu__icon::before {
   transform: rotate(-45deg) translate3d(-5.71429px, 6px, 0);
   opacity: 0;
 }
 
-.toggle-menu.is-open .toggle-menu__icon::after {
+.toggle-menu[aria-expanded="true"] .toggle-menu__icon::after {
   transform: translate3d(0, -10px, 0) rotate(-90deg);
 }
 
-@media screen and (min-width: 46.5rem) {
+@media screen and (max-width: 46.5rem) {
   .toggle-menu {
-    display: none;
+    display: inline-flex;
   }
 }

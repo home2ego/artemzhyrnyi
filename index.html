@@ -21,7 +21,7 @@
     <a href="#about" class="title--sm sr-skip-link">Skip to content</a>
 
     <header class="header layout__header">
-      <a class="logo" href="#">
+      <a id="logo" class="logo" href="#">
         <img
           src="/assets/logo.svg"
           alt="Artem Zhyrnyi logo"
@@ -30,39 +30,42 @@
         />
       </a>
 
-      <a
-        href="#menu"
+      <button
         id="toggle-menu"
-        class="toggle-menu header__toggle-menu"
-        aria-label="Open a side navigation menu"
+        class="ax-button toggle-menu header__toggle-menu"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="menu"
       >
         <span class="toggle-menu__icon"></span>
-      </a>
+      </button>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li>
-            <a href="#about" class="title--sm btn btn--nav">About</a>
-          </li>
-          <li>
-            <a href="#projects" class="title--sm btn btn--nav">Projects</a>
-          </li>
-          <li>
-            <a href="#skills" class="title--sm btn btn--nav">Skills</a>
-          </li>
-          <li>
-            <a href="#contact" class="title--sm btn btn--nav">Contact</a>
-          </li>
-        </ul>
+      <div id="menu" class="menu header__menu-wrapper">
+        <nav>
+          <ul class="navigation">
+            <li>
+              <a href="#about" class="title--sm btn btn--nav">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="title--sm btn btn--nav">Projects</a>
+            </li>
+            <li>
+              <a href="#skills" class="title--sm btn btn--nav">Skills</a>
+            </li>
+            <li>
+              <a href="#contact" class="title--sm btn btn--nav">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
         <button
           id="toggle-theme"
-          class="toggle-theme ax-button"
+          class="ax-button toggle-theme menu__toggle-theme header__toggle-theme"
           aria-label="Toggle theme"
         >
           <span class="toggle-theme__icon"></span>
         </button>
-      </nav>
+      </div>
     </header>
 
     <main>

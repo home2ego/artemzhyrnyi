@@ -28,3 +28,7 @@
   flex-direction: column;
   row-gap: 12px;
 }
+
+.layout:has(.toggle-menu[aria-expanded="true"]) {
+  overflow: hidden;
+}

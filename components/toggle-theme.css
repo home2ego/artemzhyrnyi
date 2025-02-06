@@ -2,8 +2,6 @@
   display: flex;
   align-items: center;
 
-  cursor: pointer;
-
   width: 64px;
   height: 32px;
   border: 2px solid transparent;
@@ -32,4 +30,10 @@
   background-image: url("/assets/moon.svg");
 
   translate: 32px;
+}
+
+@media screen and (max-width: 46.5rem) {
+  .toggle-theme {
+    background-color: var(--bg-color);
+  }
 }
