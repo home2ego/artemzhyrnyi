@@ -9,12 +9,13 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
 }
 
-p {
-  margin: 0;
+p,
+li {
   opacity: 0.735;
 }
 

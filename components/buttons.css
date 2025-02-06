@@ -3,9 +3,9 @@
   padding-block: 3.5px;
 
   color: var(--primary-color);
-  opacity: 0.735;
+  opacity: 0.8;
 
-  transition: opacity 0.28s;
+  transition: opacity 0.18s;
 }
 
 .btn--nav:focus,
